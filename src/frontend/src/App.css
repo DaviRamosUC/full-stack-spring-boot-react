@@ -45,6 +45,10 @@
   background: #fff;
 }
 
+.site-badge-count-4 .ant-badge-count {
+  margin-left: 2px;
+  background-color: #52c41a;
+}
 
 @keyframes App-logo-spin {
   from {
