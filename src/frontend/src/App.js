@@ -1,7 +1,21 @@
 import {useEffect, useRef, useState} from 'react'
 import {getAllStudents, removeStudentById} from "./client";
 import {errorNotification, successNotification} from './Notification'
-import {Avatar, Badge, Breadcrumb, Button, Empty, Image, Layout, Menu, Popconfirm, Spin, Table, Tag,} from 'antd';
+import {
+    Avatar,
+    Badge,
+    Breadcrumb,
+    Button,
+    Divider,
+    Empty,
+    Image,
+    Layout,
+    Menu,
+    Popconfirm,
+    Spin,
+    Table,
+    Tag,
+} from 'antd';
 import {
     DesktopOutlined,
     FileOutlined,
@@ -239,15 +253,14 @@ function App() {
                 </Content>
                 <Footer style={{textAlign: 'center'}}>
                     <div style={{display:"flex", alignItems: "center", justifyContent: "center"}}>
-                        <Image
-                            width={20}
-                            src="https://user-images.githubusercontent.com/73002604/149333170-91d70a7e-9db6-4fef-aee4-52f4242ab419.png"
-                        />
-                        <p style={{margin: '0 3px'}}>By Davi Ramos ©2022</p>
-                        <Image
-                            width={20}
-                            src="https://user-images.githubusercontent.com/73002604/149333170-91d70a7e-9db6-4fef-aee4-52f4242ab419.png"
-                        />
+                        <Divider>
+                            <p style={{margin: '0 3px'}}>
+                                By
+                                <a href="https://github.com/DaviRamosUC" target="_blank">Davi Ramos</a>
+                                ©2022
+                            </p>
+                        </Divider>
+
                     </div>
                 </Footer>
             </Layout>
