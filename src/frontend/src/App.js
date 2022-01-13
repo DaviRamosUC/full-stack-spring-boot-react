@@ -1,7 +1,7 @@
 import {useEffect, useRef, useState} from 'react'
 import {getAllStudents, removeStudentById} from "./client";
 import {errorNotification, successNotification} from './Notification'
-import {Avatar, Badge, Breadcrumb, Button, Empty, Layout, Menu, Popconfirm, Spin, Table, Tag,} from 'antd';
+import {Avatar, Badge, Breadcrumb, Button, Empty, Image, Layout, Menu, Popconfirm, Spin, Table, Tag,} from 'antd';
 import {
     DesktopOutlined,
     FileOutlined,
@@ -99,7 +99,6 @@ const handleDelete = (record, fetchStudents) => {
             errorNotification(
                 `An error has occurred`,
                 `[${res.error}, status: ${res.status}]`,
-
             )
         })
     });
@@ -238,7 +237,19 @@ function App() {
                         {renderStudents()}
                     </div>
                 </Content>
-                <Footer style={{textAlign: 'center'}}>By Davi Ramos ©2022</Footer>
+                <Footer style={{textAlign: 'center'}}>
+                    <div style={{display:"flex", alignItems: "center", justifyContent: "center"}}>
+                        <Image
+                            width={20}
+                            src="https://user-images.githubusercontent.com/73002604/149333170-91d70a7e-9db6-4fef-aee4-52f4242ab419.png"
+                        />
+                        <p style={{margin: '0 3px'}}>By Davi Ramos ©2022</p>
+                        <Image
+                            width={20}
+                            src="https://user-images.githubusercontent.com/73002604/149333170-91d70a7e-9db6-4fef-aee4-52f4242ab419.png"
+                        />
+                    </div>
+                </Footer>
             </Layout>
         </Layout>
     );
