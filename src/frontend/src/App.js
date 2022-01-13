@@ -243,7 +243,7 @@ function App() {
                             width={20}
                             src="https://user-images.githubusercontent.com/73002604/149333170-91d70a7e-9db6-4fef-aee4-52f4242ab419.png"
                         />
-                        <p style={{margin: '0 3px'}}>By Davi Ramos ©2022</p>
+                        <p style={{margin: '0 4px'}}>By Davi Ramos ©2022</p>
                         <Image
                             width={20}
                             src="https://user-images.githubusercontent.com/73002604/149333170-91d70a7e-9db6-4fef-aee4-52f4242ab419.png"
