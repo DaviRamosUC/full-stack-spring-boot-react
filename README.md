@@ -13,7 +13,7 @@
 
 <!--ts-->
 * [Objetivo](#objetivo)
-* [LibTec](#tech)
+* [Tech/Lib](#tech)
 * [Como Usar](#como)
 <!--te-->
 
@@ -43,6 +43,8 @@
 <a id="como"></a>
 ## Como Usar
 
-1. 👉🏻 <a href="https://react-spring-full-stack.herokuapp.com/">Clique aqui para ver a aplicação em tempo real</a>
+1. 👉🏻 <a href="https://react-spring-full-stack.herokuapp.com/" target="_blank">Clique aqui para ver a aplicação em tempo real</a>
+2. Aguarde alguns segundo até a aplicação carregar <br/><small>(A versão gratuita do Heroku é de baixo desempenho)</small>
+3. Assim que o servidor carregar você poderá utilizar o painel para adicionar, remover, atualizar os dados do estudante
 
 ---
